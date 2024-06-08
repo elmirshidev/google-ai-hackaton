@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 import OpenAI from "openai";
-const OPENAI_APIKEY = "sk-proj-eISxHB6ZdkVwRk9JFl6gT3BlbkFJcWL0HgdhBSmCsrpnAr5P";
-const ORGANIZATION_KEY = "org-d2qZS2onV9cMpAX8FSEbF2OY";
+const OPENAI_APIKEY = process.env.OPENAI_APIKEY;
+const ORGANIZATION_KEY = process.env.ORGANIZATION_KEY;
 const openai = new OpenAI({
     apiKey: OPENAI_APIKEY,
     organization: ORGANIZATION_KEY,
